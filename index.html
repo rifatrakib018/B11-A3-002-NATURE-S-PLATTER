@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- daisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/bbfc4be646.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- style -->
+    <style>
+        .sora-font{
+            font-family: "Sora";
+        }
+        .adlam {
+            font-family: "ADLaM Display", serif;
+
+        }
+        p{
+            color: rgb(126, 124, 124);
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                'color-accent': '#179800',
+                'header-gradient-bg': '#EFEBE3',
+                'color-secondary': '#eeeae2',
+                'color-gradient': '#53db3a',
+            },
+            },
+        },
+        }
+    </script>
+
+</head>
+<body class="sora-font">
+    <header class="bg-gradient-to-t from-header-gradient-bg to-white-50">
+        <!-- navbar -->
+        <nav class="md:w-4/5 mx-auto">
+            <div class="navbar h-25">
+                <!-- logo -->
+                <div class="navbar-start">
+                  <!-- <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                  </div> -->
+                  <a class="" href="#"><img src="./c2-assets/logo-header.png" alt=""></a>
+                </div>
+                <!-- manu -->
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <!-- buttons -->
+                <div class="navbar-end space-x-5 hidden md:flex">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn border-color-accent bg-white hover:bg-color-accent hover:text-white py-1">Login</a>
+                    <a class="btn bg-color-accent text-white hover:border-color-accent hover:bg-white hover:text-black">Register</a>
+                                
+                </div>                    
+                <div class="flex-none navbar-end md:hidden ">
+                    <button class="btn btn-square btn-ghost">
+                        <i class="fa-solid fa-bars text-color-accent text-2xl"></i>
+                    </button>
+                </div>
+              </div>
+        </nav>
+        <!-- hero section -->
+        <section class="my-10 md:w-4/5 mx-auto">
+            <div class="hero md:min-h-screen">
+                <div class="hero-content text-center flex flex-col justify-between p-0">
+                    <!-- text content -->
+                    <div class="max-w-md">
+                        <h1 class="text-4xl font-bold">Freshness <span class="text-color-accent"> You Can
+                            Count</span> On, Prices You’ll Love!</h1>
+                        <p class="py-6">
+                            Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                        </p>
+                        
+                    </div>
+                    <!-- image content -->
+                    <div class="h-210 w-3/4">
+                        <img src="./c2-assets/hero-vegetables.png"  alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- services card -->
+        <section class="md:w-4/5 mx-auto my-10 md:my-20">
+            <h1 class="text-color-accent text-3xl font-semibold m-5">Services</h1>
+            <div class="flex flex-col justify-center m-5 md:flex md:flex-row md:justify-between  gap-5">
+                <!-- card 1 -->
+                <div class="card bg-color-secondary md:w-1/3 shadow-lg">
+                    <figure class="px-10 pt-10">
+                    <img
+                        src="./c2-assets/service.png"
+                        alt="Shoes"
+                        class="rounded-full bg-white p-3" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">24/7 Services </h2>
+                    <p>Customers can contact the service at any time, day or night. </p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-color-secondary md:w-1/3 shadow-lg">
+                    <figure class="px-10 pt-10">
+                    <img
+                        src="./c2-assets/delivery.png"
+                        alt="Shoes"
+                        class="rounded-full bg-white p-3" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Fast Delivery</h2>
+                    <p> A delivery service that delivers goods within a few hours or before the end of the day.  </p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card bg-color-secondary md:w-1/3 shadow-lg">
+                    <figure class="px-10 pt-10">
+                    <img
+                        src="./c2-assets/healthy.png"
+                        alt="Shoes"
+                        class="rounded-full bg-white p-3" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Healthy Products</h2>
+                    <p>Healthy products are substances that provide energy or promote health </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular product -->
+        <section class="bg-color-secondary my-20 py-10">
+            <h1 class="w-4/5 mx-auto text-color-accent text-3xl font-semibold py-10">Popular Products</h1>
+            <div class="w-4/5 mx-auto flex flex-col md:flex-row gap-5 py-5">
+                <div class="rounded-lg bg-gradient-to-br from-color-gradient to-white-100 md:w-1/3 relative">
+                    <div class=" h-100 p-5">
+                        <div class="sm:relative sm:bottom-0 sm:right-0 md:absolute md:bottom-0 md:right-0">
+                        <img src="./c2-assets/vegetable-offer.png" class="" alt="">
+                        </div>
+                        <div class="">
+                            <h1 class=".adlam text-xl font-bold text-white">30% off</h1>
+                            <p class="text-black opacity-3">Discover a world of treats, toys, and essentials handpicked for</p>
+                            <button class="bg-white py-2 px-3 rounded-lg">Buy Now</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="h-100 md:w-2/3">
+                    <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2">
+                        <!-- product 1 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                                <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                    <img
+                                    src="./c2-assets/onion.png"
+                                    class="rounded-lg" />
+                                </div>
+                              
+                              <div class="text-sm w-2/3">
+                                <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h1 class="font-medium">Onion 1kg</h1>
+                                <p class="text-sm">
+                                    $39.99
+                                </p>
+                              </div>
+                        </div>
+
+                        <!-- product 2 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/tomato.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Tomato 500g</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- product 3 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/potato.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Potato 1kg</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+                        <!-- product 4 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/tomato.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Tomato 500g</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+                        <!-- product 5 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/onion.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Onion 1kg</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- product 6 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/tomato.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Tomato 500g</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+                        <!-- product 7 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/onion.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Onion 1kg</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- product 8 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/potato.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Potato 1kg</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+                        <!-- product 9 -->
+                        <div class="bg-white flex flex-row justify-between items-center gap-2 py-3 px-2 rounded-lg">
+                            <div class="max-h-20 w-1/3 bg-color-secondary rounded-lg">
+                                <img
+                                src="./c2-assets/potato.png"
+                                class="rounded-lg" />
+                            </div>
+                          
+                          <div class="text-sm w-2/3">
+                            <p><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                            <h1 class="font-medium">Potato 1kg</h1>
+                            <p class="text-sm">
+                                $39.99
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
